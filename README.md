@@ -81,6 +81,10 @@ The picker writes `<project>_<timestamp>_<short-id>.md` into the current directo
 
 `--mode branch` reconstructs a single chain by following `parentId` from the selected leaf back to the root. It is a best-effort approximation and can differ from what the UI shows in some edge cases.
 
+## Acknowledgements
+
+This project started as a bash wrapper on top of the python [`pi-session-to-md`](https://github.com/cgint/pi-session-to-md) by [cgint](https://github.com/cgint), but I turned it into a typescript cli once it became big enough. I've added a lot of new features to the original functionality.
+
 ## License
 
 MIT (see [LICENSE](./LICENSE)).
