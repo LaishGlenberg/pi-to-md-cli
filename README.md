@@ -1,5 +1,9 @@
 # pi-to-md-cli
 
+[![npm version](https://img.shields.io/npm/v/@lglen/pi-to-md-cli.svg?logo=npm)](https://www.npmjs.com/package/@lglen/pi-to-md-cli)
+[![Downloads](https://img.shields.io/npm/dm/@lglen/pi-to-md-cli.svg?logo=npm)](https://www.npmjs.com/package/@lglen/pi-to-md-cli)
+[![Build Status](https://github.com/LaishGlenberg/pi-to-md-cli/workflows/CI/badge.svg)](https://github.com/LaishGlenberg/pi-to-md-cli/actions)
+
 Convert [`pi-coding-agent`](https://github.com/badlogic/pi-mono) session JSONL files into **conversation-first Markdown**, with an interactive picker for choosing a session.
 
 Given a session file (`*.jsonl`), it produces readable transcripts (USER + ASSISTANT + optional THINKING) suitable for GitHub/GitLab discussions, teammate handoff, or archiving.
