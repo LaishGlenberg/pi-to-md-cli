@@ -1,6 +1,6 @@
 {
   "name": "@lglen/pi-to-md-cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Convert pi-coding-agent session JSONL files to conversation-first Markdown, with an interactive session picker.",
   "license": "MIT",
   "author": "lglen",
