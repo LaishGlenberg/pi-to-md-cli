@@ -1,0 +1,50 @@
+{
+  "name": "@lglen/pi-to-md-cli",
+  "version": "0.1.0",
+  "description": "Convert pi-coding-agent session JSONL files to conversation-first Markdown, with an interactive session picker.",
+  "license": "MIT",
+  "author": "lglen",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "pi-to-md": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaishGlenberg/pi-to-md-cli.git"
+  },
+  "homepage": "https://github.com/LaishGlenberg/pi-to-md-cli#readme",
+  "bugs": "https://github.com/LaishGlenberg/pi-to-md-cli/issues",
+  "keywords": [
+    "pi",
+    "pi-coding-agent",
+    "cli",
+    "markdown",
+    "session",
+    "transcript"
+  ],
+  "engines": {
+    "node": ">=22.18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json && node -e \"require('node:fs').chmodSync('dist/index.js', 0o755)\"",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "node --test",
+    "lint": "oxlint --deny-warnings index.ts src test",
+    "prepack": "npm run build",
+    "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.6",
+    "oxlint": "^1.85.0",
+    "typescript": "7.0.2"
+  }
+}
