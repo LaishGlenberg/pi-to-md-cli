@@ -38,7 +38,9 @@
     "build": "tsc -p tsconfig.build.json && node -e \"require('node:fs').chmodSync('dist/index.js', 0o755)\"",
     "typecheck": "tsc -p tsconfig.json",
     "test": "node --test",
-    "lint": "oxlint --deny-warnings index.ts src test",
+    "lint": "oxlint --deny-warnings index.ts src scripts test",
+    "minor": "npm version minor --no-git-tag-version",
+    "major": "npm version major --no-git-tag-version",
     "prepack": "npm run build",
     "prepare": "npm run build"
   },
